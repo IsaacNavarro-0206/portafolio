@@ -14,10 +14,12 @@ import Header from "../components/common/Header.astro";
     <meta name="generator" content={Astro.generator} />
     <title>Isaac Navarro</title>
   </head>
-  <body>
+  <body class="min-h-screen flex flex-col">
     <Header />
 
-    <slot />
+    <main class="flex-grow">
+      <slot />
+    </main>
 
     <Footer />
   </body>
